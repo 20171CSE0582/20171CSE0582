@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<style>
+.tooltip{ 
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;}
+p::first-letter {
+  color: #ff0000;
+  font-variant: small-caps;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+p{
+  opacity: 0.5;
+  filter: alpha(opacity=50); 
+}
+p:hover{opacity:1;}
+</style>
+<body style="text-align:center;">
+<p>Note that the position of the tooltip text isn't very good. Go back to the tutorial and continue reading on how to position the tooltip in a desirable way.Note that the position of the tooltip text isn't very good. Go back to the tutorial and continue reading on how to position the tooltip in a desirable way</p>
+
+
+<div class="tooltip">Hover over me
+  <span class="tooltiptext">Tooltip text</span>
+</div>
+
+<p>Note that the position of the tooltip text isn't very good. Go back to the tutorial and continue reading on how to position the tooltip in a desirable way.</p>
+
+</body>
+</html>
